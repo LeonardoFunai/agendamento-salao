@@ -1,0 +1,162 @@
+/* Fundo sólido rosa médio */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e57399; /* Rosa médio */
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 80px;
+}
+
+/* Navbar estilizada */
+nav {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Email alinhado à esquerda */
+nav .admin-email {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Botão "Sair" alinhado à direita */
+nav .btn-sair {
+    background: linear-gradient(45deg, #e60073, #ffcc00);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav .btn-sair:hover {
+    background: linear-gradient(45deg, #ffcc00, #e60073);
+    transform: scale(1.05);
+}
+
+/* Container principal */
+.container {
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    width: 90%;
+    margin-top: 100px;
+}
+
+/* Títulos */
+h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Tabelas */
+table {
+    width: 90%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #f759ef;
+    text-align: center;
+}
+
+th {
+    background-color: #fb62e9;
+    color: black;
+    font-weight: bold;
+}
+
+/* Links de ações */
+td a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #f20688, #d4af37);
+    transition: 0.3s;
+    display: inline-block;
+    text-align: center;
+}
+
+td a:hover {
+    background: linear-gradient(45deg, #e60073, #ffcc00);
+    transform: scale(1.05);
+}
+
+/* Mensagens de erro */
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .admin-email {
+        margin-bottom: 10px;
+    }
+
+    .btn-sair {
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    td a {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}

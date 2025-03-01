@@ -1,0 +1,156 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(45deg, #f20688, #cb0fe4);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 15px;
+    background-color:  #37053e;
+    color: white;
+    width: 600px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+fieldset {
+    border: 3px solid #d4af37;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+legend {
+    border: 1px solid #d4af37;
+    padding: 10px;
+    text-align: center;
+    background-color: #d4af37;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.inputbox {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: solid white;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.labelinput {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelinput,
+.inputUser:valid ~ .labelinput {
+    top: -15px;
+    font-size: 12px;
+    color: #d4af37;
+}
+
+
+#submit {
+    background: linear-gradient(45deg, #f20688, #d4af37);
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    background: linear-gradient(45deg, #e60073, #ffcc00);
+    transform: scale(1.05);
+}
+
+
+.error-message {
+    background-color: rgba(255, 69, 58, 0.9);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 10px;
+}
+
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+@media (max-width: 500px) {
+    .box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.btn-voltar {
+    display: block; /* Permite centralizar com margin */
+    width: fit-content; /* Ajusta ao conteúdo */
+    margin: 10px auto; /* Centraliza horizontalmente */
+    padding: 8px 15px;
+    font-size: 14px; /* Reduz o tamanho do texto */
+    background: linear-gradient(45deg, #e60073, #ffcc00);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-voltar:hover {
+    background: linear-gradient(45deg, #ffcc00, #e60073);
+    transform: scale(1.05);
+}
+
